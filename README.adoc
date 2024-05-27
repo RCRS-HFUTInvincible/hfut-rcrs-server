@@ -1,8 +1,11 @@
-= Robocup Rescue Simulation Server
+= Robocup Rescue Simulation Server For HFUTInvincible
 :author: RoboCup Rescue Team
 :nofooter:
 
 (Linux) Instructions to download, build and run the RoboCup Rescue Simulator (RCRS)
+本项目是为了方便队员定制我们自己使用的server, 可以自行进行修改并提交到github中
+需要不同的功能, 可以从主分支创建一个新的分支进行修改, 且尽量保持主分支与原 rcrs-server 仓库中的代码一致
+若原 rcrs-server 进行了更新, 应该对本仓库中的代码及时进行更新, 确保使用最新的 server 进行地图的运行
 
 == Software Pre-Requisites
 
