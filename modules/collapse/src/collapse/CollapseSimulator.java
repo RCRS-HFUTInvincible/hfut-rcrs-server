@@ -229,21 +229,21 @@ public class CollapseSimulator extends StandardSimulator implements
 		Map<Road, Collection<java.awt.geom.Area>> newBlock = doBlock(collapsed,
 				time);
 		// Create blockade objects
-		Map<Road, Collection<Blockade>> blockades = createBlockadeObjects(newBlock);
-		for (Map.Entry<Road, Collection<Blockade>> entry : blockades.entrySet()) {
-			Road r = entry.getKey();
-			List<EntityID> existing = r.getBlockades();
-			List<EntityID> ids = new ArrayList<EntityID>();
-			if (existing != null) {
-				ids.addAll(existing);
-			}
-			for (Blockade b : entry.getValue()) {
-				ids.add(b.getID());
-			}
-			r.setBlockades(ids);
-			changes.addAll(entry.getValue());
-			changes.addChange(r, r.getBlockadesProperty());
-		}
+		// Map<Road, Collection<Blockade>> blockades = createBlockadeObjects(newBlock);
+		// for (Map.Entry<Road, Collection<Blockade>> entry : blockades.entrySet()) {
+		// 	Road r = entry.getKey();
+		// 	List<EntityID> existing = r.getBlockades();
+		// 	List<EntityID> ids = new ArrayList<EntityID>();
+		// 	if (existing != null) {
+		// 		ids.addAll(existing);
+		// 	}
+		// 	for (Blockade b : entry.getValue()) {
+		// 		ids.add(b.getID());
+		// 	}
+		// 	r.setBlockades(ids);
+		// 	changes.addAll(entry.getValue());
+		// 	changes.addChange(r, r.getBlockadesProperty());
+		// }
 		// If any roads have undefined blockades then set the blockades property
 		// to the empty list
 		for (Road next : roadCache) {

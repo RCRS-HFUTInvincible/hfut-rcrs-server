@@ -7,6 +7,9 @@
 需要不同的功能, 可以从主分支创建一个新的分支进行修改, 且尽量保持主分支与原 rcrs-server 仓库中的代码一致
 若原 rcrs-server 进行了更新, 应该对本仓库中的代码及时进行更新, 确保使用最新的 server 进行地图的运行
 
+== Blockade Free 分支
+本分支中将地图中的障碍物进行了移除, 便于对AT和FB进行测试, 具体修改见提交
+
 == Software Pre-Requisites
 
 * Git
